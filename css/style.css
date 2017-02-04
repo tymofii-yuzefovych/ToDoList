@@ -1,0 +1,14 @@
+.complete{
+  background-color: red;
+}
+body{
+  background: #666;
+}
+li{
+  list-style-type: none;
+}
+.container{
+  margin: 0 auto;
+  width: 920px;
+
+}
