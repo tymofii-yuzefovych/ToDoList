@@ -1,14 +1,162 @@
-.complete{
-  background-color: red;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-body{
-  background: #666;
-}
-li{
-  list-style-type: none;
-}
-.container{
-  margin: 0 auto;
-  width: 920px;
 
+.complete {
+    background-color: crimson;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9f6fd+0,d3eefb+100;Blue+3D+%233 */
+    background: #e9f6fd;
+    /* Old browsers */
+}
+
+li {
+    list-style-type: none;
+    /*border: 1px solid gray;*/
+    width: 369px;
+    height: 150px;
+    font-size: 0.5em;
+    color: white;
+    position: relative;
+    background-color: #667AA5;
+    padding: 1em 1em;
+    margin-top: 3em;
+    position: relative;
+    border-radius: 3px;
+
+}
+
+li p {
+    margin: 2em;
+}
+li h1 {
+}
+
+li button {
+    margin-top: 2em;
+    width: 46%;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #3079ed;
+    border-radius: 3px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+#complete2 {
+    position: absolute;
+    right:  10px;
+    bottom: 10px;
+    background-color: #4d90fe;
+    bottom: 10px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+#delete2 {
+    position: absolute;
+    right: :10px;
+    bottom: 10px;
+    font-weight: 700;
+    background-color: #4d90fe;
+    bottom: 10px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+.container {
+    margin: 0 auto;
+    width: 920px;
+    margin: 2em;
+}
+
+.task {
+    width: 40%;
+    height: 60px;
+    background-color: #3F4C6B;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+}
+
+#counter {
+  background-color: crimson;
+  padding: 10px 10px;
+  border-radius: 3px;
+  margin-left: 1em;
+}
+#addTaskButton {
+    padding: 2em;
+    font-size: 1em;
+    width: 40%;
+    margin-top: 1em;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #3079ed;
+    border-radius: 3px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4d90fe;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+#addTaskButton:hover {
+    color: #fff;
+    background-color: #1fc8db;
+    border-color: #2cb5e8;
+
+}
+#complete2:hover {
+    color: #fff;
+    background-color: #1fc8db;
+    border-color: #2cb5e8;
+}
+#delete2:hover {
+    color: #fff;
+    background-color: crimson;
+    border-color: #2cb5e8;
+}
+
+#removeFinishedTasksButton:hover {
+    color: #fff;
+    background-color: crimson;
+    border-color: red;
+}
+
+#taskInput {
+    padding: 1em;
+    font-size: 1em;
+    width: 40%;
+}
+
+#removeFinishedTasksButton {
+    padding: 2em;
+    font-size: 1em;
+    width: 40%;
+    margin-top: 1em;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #3079ed;
+    border-radius: 3px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4d90fe;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
 }
