@@ -6,8 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var span = document.getElementById("counter");
     var counter = 0;
     span.innerText = counter;
+    removeFinishedTasksButton.classList.add('invisible');
+    span.parentNode.classList.add('invisible');
 
     addTaskButton.addEventListener("click", function() {
+        removeFinishedTasksButton.classList.remove('invisible');
+        span.parentNode.classList.remove('invisible');
         var valueInput = taskInput.value;
         if (validateInput(valueInput) === false) {
             return;
