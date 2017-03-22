@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var span = document.getElementById("counter");
     var counter = 0;
     span.innerText = counter;
-    
+
     addTaskButton.addEventListener("click", function() {
         var valueInput = taskInput.value;
         if (validateInput(valueInput) === false) {
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var button = document.createElement("button");
         var complete = document.createElement("button");
 
-
         taskList.appendChild(li);
         counter++;
         span.innerText = counter;
@@ -29,14 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonComplete.setAttribute("id", "complete2");
         buttonDelete.setAttribute("id", "delete2");
 
-
-
         button.innerText = "Delete";
         complete.innerText = "Complete";
-        
+
         buttonComplete.addEventListener("click", function() {
             btnh1.parentNode.parentNode.classList.toggle("complete");
-            
 
         })
 
@@ -50,22 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     removeFinishedTasksButton.addEventListener("click", function() {
         var liComplete = document.querySelectorAll(".complete");
-        if(counter==0){
-                return null;
-            }else{
-        for (var i = 0; i < liComplete.length; i++) {
-            if (liComplete[i].className == "complete") {
-                liComplete[i].parentNode.removeChild(liComplete[i]);
+        if (counter == 0) {
+            return null;
+        } else {
+            for (var i = 0; i < liComplete.length; i++) {
+                if (liComplete[i].className == "complete") {
+                    liComplete[i].parentNode.removeChild(liComplete[i]);
+                }
             }
-            
         }
-        }
-        counter--;
+        counter=document.querySelectorAll("li").length;
         span.innerText = counter;
     });
 
     function validateInput(valueInput) {
-        if (valueInput.length < 5 || valueInput.length > 400) {
+        if (valueInput.length < 2 || valueInput.length > 400) {
             return false;
         } else {
             return true;
