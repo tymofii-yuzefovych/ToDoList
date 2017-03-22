@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-        counter=document.querySelectorAll("li").length;
+        counter = document.querySelectorAll("li").length;
         span.innerText = counter;
     });
 
